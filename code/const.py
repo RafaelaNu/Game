@@ -14,7 +14,7 @@ WIN_WIDTH = 1080  # 576
 WIN_HEIGHT = 1000  # 324
 
 # E
-ENTITY_SPEED = {'Level1Bg0': 0,
-                'Level1Bg1': 1,
-                'Level1Bg2': 2
+ENTITY_SPEED = {'Level1Bg0': 10, #0
+                'Level1Bg1': 10, #1
+                'Level1Bg2': 20 #2
                 }
