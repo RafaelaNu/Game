@@ -10,11 +10,14 @@ MENU_OPTION = ('NEW GAME 1 P',
                'EXIT')
 
 # W
-WIN_WIDTH = 1080  # 576
-WIN_HEIGHT = 1000  # 324
+WIN_WIDTH =  576 #1080  # 576
+WIN_HEIGHT =  324 #900  # 324
 
 # E
-ENTITY_SPEED = {'Level1Bg0': 10, #0
-                'Level1Bg1': 10, #1
-                'Level1Bg2': 20 #2
+ENTITY_SPEED = {'Level1Bg0': 4, #0
+                'Level1Bg1': 1, #1
+                'Level1Bg2': 2, #2
+                'Level1Bg3': 3,
+                'Level1Bg4': 4,
+                'Player1' : 6
                 }
