@@ -1,9 +1,12 @@
+import sys
+
 import pygame
 from pygame import Surface
 from pygame.font import Font
 
+from code.Level import Level
 from code.Menu import Menu
-from code.const import WIN_WIDTH, WIN_HEIGHT
+from code.const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
 
 
 class Game:
@@ -14,6 +17,11 @@ class Game:
     def run(self):
         while True:
             menu = Menu(self.window)
-            menu.run()
+            menu_return = menu.run()
 
-
+            if menu_return in [MENU_OPTION[0], MENU_OPTION[1], MENU_OPTION[2]]:
+                level = Level(self.window, 'level1', menu_return)
+                level_return = level.run()
+            else:
+                pygame.quit()
+                sys.exit()
