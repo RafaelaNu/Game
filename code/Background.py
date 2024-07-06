@@ -9,5 +9,5 @@ class Background(Entity):
     def move(self):
         self.rect.centerx -= ENTITY_SPEED[self.name]  # CONFIGURACAO DA IMAGEM DE BACKGROUND AQUI
         if self.rect.right <= 0: #0
-            self.rect.x = WIN_WIDTH #self.rect.left = 0  #WIN_WIDTH
+            self.rect.left = WIN_WIDTH #self.rect.left = 0  #WIN_WIDTH
 
