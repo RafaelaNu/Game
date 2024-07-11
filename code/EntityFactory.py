@@ -12,16 +12,16 @@ class EntityFactory:
         match entity_name:
             case 'Level1Bg':
                 list_bg = []
-                for i in range(5):
-                    list_bg.append(Background(f'Level1Bg{i}', (0, 0)))  # 0 0
-                    list_bg.append(Background(f'Level1Bg{i}', (0, 0)))  # (WIN_WIDTH, 0)))
-                    return list_bg
+                for i in range(4):
+                    list_bg.append(Background(f'Level1Bg{i}', (0, 0)))
+                    list_bg.append(Background(f'Level1Bg{i}', (WIN_WIDTH, 0)))
+                return list_bg
 
             case 'Player1':
-                return Player('Player1', (10, WIN_HEIGHT / 2 - 30))  # (10, WIN_HEIGHT / 2))
+                return Player('Player1', (10, WIN_HEIGHT / 2 - 30))
 
             case 'Player2':
-                return Player('Player2', (10, WIN_HEIGHT / 2 + 60))  # onde muda as posicoes das naves
+                return Player('Player2', (10, WIN_HEIGHT / 2 + 30))
 
             case 'Enemy1':
                 return Enemy('Enemy1', (WIN_WIDTH + 10, random.randint(0 + 40, WIN_HEIGHT - 40)))

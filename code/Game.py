@@ -1,7 +1,7 @@
 import sys
 
-import pygame
-from pygame import Surface
+import pygame as pygame
+from pygame import Surface, Rect
 from pygame.font import Font
 
 from code.Level import Level
@@ -22,6 +22,9 @@ class Game:
             if menu_return in [MENU_OPTION[0], MENU_OPTION[1], MENU_OPTION[2]]:
                 level = Level(self.window, 'level1', menu_return)
                 level_return = level.run()
+                if level_return:
+                    level = Level(self.window, 'Level2', menu_return)
+                    level_return = level.run()
             else:
                 pygame.quit()
                 sys.exit()
