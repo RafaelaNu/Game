@@ -38,7 +38,7 @@ class Level:
                 self.window.blit(source=ent.surf, dest=ent.rect)  # Aqui eu desenho minhas entidades
                 ent.move()
                 if isinstance(ent, (Player, Enemy)):
-                    shoot = ent.shoot()
+                    shoot = ent.shoot
                     if shoot is not None:
                         self.entity_list.append(shoot)
 
