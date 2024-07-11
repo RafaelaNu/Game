@@ -5,7 +5,6 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code import EntityMediator
 from code.Enemy import Enemy
 from code.Entity import Entity
 from code.EntityMediator import EntityMediator

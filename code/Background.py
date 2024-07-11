@@ -1,5 +1,5 @@
-from code.Entity import Entity
 from code.const import WIN_WIDTH, ENTITY_SPEED
+from code.Entity import Entity
 
 
 class Background(Entity):
@@ -10,4 +10,3 @@ class Background(Entity):
         self.rect.centerx -= ENTITY_SPEED[self.name]
         if self.rect.right <= 0:
             self.rect.left = WIN_WIDTH
-
